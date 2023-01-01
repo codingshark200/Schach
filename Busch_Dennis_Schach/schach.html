@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>Schach</title>
+	
+	<script src="init.js"></script>
+	<script src="draw.js"></script>
+	<script src="movement.js"></script>
+	<script src="events.js"></script>
+	
+</head>
+
+<body>
+
+	<audio id="se_schach" preload="auto">
+		<source src='sounds/se_schach.wav' />
+
+	</audio>
+	
+	<div style = "width:20%;height:auto;float:left">
+		<p id="zuege"></p>
+	</div>
+	
+	<canvas
+            id='schachbrett'
+            width='600px'
+            height='600px'
+            style='background-color:#d1d1d1; float:left;border: solid thin;'>
+    </canvas>
+	
+	<div style="padding-left: 2%;float:left;">
+		
+		<p id="spieler">Weiss beginnt!</p>
+		<br>
+		<button style="width:100px;height:50px;text-align:center;" onclick="neuesSpiel();zeichneBrett();zeichneFiguren();">Start</button>
+		<br>
+		<h2 id="txt_schach" style="color:red"></h2>
+		<p id='insSchach'></p>
+		
+	<div>
+	
+</body>
+</html>
